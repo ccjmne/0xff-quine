@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.ts",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ccjmne/analog-clock-quine-ts.git"
