@@ -1,0 +1,19 @@
+{
+  "name": "analog-clock-quine-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ccjmne/analog-clock-quine-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "quine",
+    "recreational",
+    "coding"
+  ],
+  "author": "Éric NICOLAS <ccjmne@gmail.com> (ccjmne)",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/ccjmne/analog-clock-quine-ts#readme"
+}
