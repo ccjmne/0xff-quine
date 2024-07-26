@@ -1,8 +1,7 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 
 const i = String(readFileSync('main.js')).replace(/\n|^\s+/gm, '')
-writeFileSync(
-  'out',
+process.stdout.write(
   i.replace(
     `s='^'`,
     `s='${i

@@ -10,8 +10,8 @@
   },
   "scripts": {
     "dev": "ls *.js | entr -c npm run once --silent",
-    "once": "node compile.js && diff out <(node out) --color --report-identical-files",
-    "test": "node compile.js && diff out <(node out) --color --report-identical-files --brief"
+    "once": "node compile.js > out && diff out <(node out) --color --report-identical-files",
+    "test": "node compile.js > out && diff out <(node out) --color --report-identical-files --brief"
   },
   "keywords": [
     "typescript",
