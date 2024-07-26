@@ -2,7 +2,7 @@
   "name": "analog-clock-quine-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "main.ts",
+  "main": "main.js",
   "type": "module",
   "repository": {
     "type": "git",
