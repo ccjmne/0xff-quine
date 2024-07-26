@@ -8,6 +8,11 @@
     "type": "git",
     "url": "git+ssh://git@github.com/ccjmne/analog-clock-quine-ts.git"
   },
+  "scripts": {
+    "dev": "ls *.js | entr -c npm run once --silent",
+    "once": "node compile.js && diff out <(node out) --color --report-identical-files",
+    "test": "node compile.js && diff out <(node out) --color --report-identical-files --brief"
+  },
   "keywords": [
     "typescript",
     "quine",
