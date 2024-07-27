@@ -1,12 +1,12 @@
 {
-  "name": "analog-clock-quine-ts",
+  "name": "some-js-quine",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ccjmne/analog-clock-quine-ts.git"
+    "url": "git+ssh://git@github.com/ccjmne/some-js-quine.git"
   },
   "scripts": {
     "dev": "ls *.js | entr -c npm run once --silent",
@@ -14,12 +14,12 @@
     "test": "node compile.js > out && diff out <(node out) --color --report-identical-files --brief"
   },
   "keywords": [
-    "typescript",
+    "javascript",
     "quine",
     "recreational",
     "coding"
   ],
   "author": "Éric NICOLAS <ccjmne@gmail.com> (ccjmne)",
   "license": "GPL-3.0",
-  "homepage": "https://github.com/ccjmne/analog-clock-quine-ts#readme"
+  "homepage": "https://github.com/ccjmne/some-js-quine#readme"
 }
