@@ -1,4 +1,4 @@
-Revisions: 1                     Some JS Quine                      Éric Nicolas
+Revisions: 2                     Some JS Quine                      Éric Nicolas
 Latest: 2024-04-26   
 
 There is nothing special here, just a JavaScript Quine that doesn't employ any
@@ -14,8 +14,8 @@ trickery to introspect its own code or escape its "data".
     input data as part of its code: the `compile.js` script shall take care of
     this task.
 
-    The quine is compiled to the file called `out`.  It is meant to be
-    interpreted with Node.js.
+    The quine is compiled to the file called `out`, which is precisely 300 bytes
+    long.  It is meant to be interpreted with Node.js.
 
 To ascertain the validity of the quine, one may compare the contents of `out` to
 that of the output of `node out`, for which I recommend the GNU `sha???sum` or
