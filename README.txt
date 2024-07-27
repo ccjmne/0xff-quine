@@ -1,10 +1,10 @@
-Revisions: 2                     Some JS Quine                      Éric Nicolas
-Latest: 2024-04-26   
+Revisions: 3                     Some JS Quine                      Éric NICOLAS
+Latest: 2024-07-27
 
 There is nothing special here, just a JavaScript Quine that doesn't employ any
 trickery to introspect its own code or escape its "data".
 
-    The main code belongs in `main.js`.  It essentially consists of an immensely
+    The main code resides in `main.js`.  It essentially consists of an immensely
     basic interpreter that receives and input and consumes it byte by byte.
     For each byte, it pretty much spits it back to its standard output, unless
     it recognises one special marker (here ^, a caret), which it'll handle by
@@ -21,9 +21,9 @@ To ascertain the validity of the quine, one may compare the contents of `out` to
 that of the output of `node out`, for which I recommend the GNU `sha???sum` or
 `diff` utilities.
 
-    Although that test in itself doesn't attest to the exactitude of the quine,
-    I like the idea of feeding a couple of generations of the original script
-    through the interpreter:
+    Although this following test in itself doesn't attest to the exactitude
+    of the quine, I like the idea of feeding a couple of generations of the
+    original script through the interpreter:
 
         node out | node - | node - | node - | node -
 
