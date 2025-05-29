@@ -1,8 +1,10 @@
-Revisions: 3                     Some JS Quine                      Éric NICOLAS
-Latest: 2024-07-27
+Revisions: 4                 Some 255-byte JS Quine                 Éric NICOLAS
+Latest: 2025-05-29           ----------------------
 
 There is nothing special here, just a JavaScript Quine that doesn't employ any
 trickery to introspect its own code or escape its "data".
+
+Oh, and it's precisely 0b11111111 bytes long.
 
     The main code resides in `main.js`.  It essentially consists of an immensely
     basic interpreter that receives and input and consumes it byte by byte.
@@ -14,7 +16,7 @@ trickery to introspect its own code or escape its "data".
     input data as part of its code: the `compile.js` script shall take care of
     this task.
 
-    The quine is compiled to the file called `out`, which is precisely 300 bytes
+    The quine is compiled to the file called `out`, which is precisely 255 bytes
     long.  It is meant to be interpreted with Node.js.
 
 To ascertain the validity of the quine, one may compare the contents of `out` to
@@ -25,11 +27,11 @@ that of the output of `node out`, for which I recommend the GNU `sha???sum` or
     of the quine, I like the idea of feeding a couple of generations of the
     original script through the interpreter:
 
-        node out | node - | node - | node - | node -
+        node out | node - | node - | node - | node - | node - | node -
 
 In its current shape, there is not much of interest here.  It would be possible
 to realise something more aesthetically pleasing in its output, especially by
 leveraging JavaScript's template literals, and that may be something to be
 explored in the future.
 
-vim: textwidth=80 expandtab shiftwidth=4 smarttab
+                                                          vim: tw=80 sw=4 et sta

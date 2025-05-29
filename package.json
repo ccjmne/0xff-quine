@@ -1,7 +1,7 @@
 {
   "name": "some-js-quine",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "A 255-byte JavaScript quine with no tricks",
   "main": "main.js",
   "type": "module",
   "repository": {
