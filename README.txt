@@ -29,6 +29,12 @@ that of the output of `node out`, for which I recommend the GNU `sha???sum` or
 
         node out | node - | node - | node - | node - | node - | node -
 
+                              -------- >8 --------
+curl -s https://raw.githubusercontent.com/ccjmne/some-js-quine/master/out > q
+diff -s q <(node q)
+[[ 255 -eq $(wc -c < q) ]] && echo yippee
+                              -------- 8< --------
+
 In its current shape, there is not much of interest here.  It would be possible
 to realise something more aesthetically pleasing in its output, especially by
 leveraging JavaScript's template literals, and that may be something to be
