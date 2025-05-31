@@ -13,9 +13,12 @@ Oh, and it's precisely 0xff bytes long.
     marker (here ^, a caret), which it'll handle by printing out an escaped
     version of the entire input.
 
-    However, a proper quine takes no input. Therefore, there is an extra step to
-    preparing it, that of incorporating its input data as part of its code: that
-    task shall be put under the care of the `compile.js` script.
+    However, a proper quine takes no input.  Therefore, there is an extra step
+    to preparing it, that of incorporating its input data as part of its code:
+    that task shall be put under the care of the `compile.js` script.
+
+    Well, I suppose I brushed over what becomes the main point of the exercise:
+    escaping stuff, but there has to be *some* thing happening, hasn't it?
 
     The quine is compiled to the file called `out`, which is precisely 255 bytes
     long.  It is meant to be interpreted with Node.js.
